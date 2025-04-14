@@ -26,12 +26,20 @@ def palupdate_label():
 def atualizatudo():
     update_label()
     palupdate_label()
+def leitura():
+    texto.config(state="disabled")
+def enable():
+    texto.config(state="normal")
 label = tk.Label(application, text="Caracteres: 0")
 label2 = tk.Label(application, text="Palavras: 0")
 texto = tk.Text(application)
 abrir = Button(application, text="Abrir", command=lambda:abrirarqv())
 salvar = Button(application, text="Salvar", command=lambda:fsalvar())
 limpar = Button(application, text="Limpar", command=lambda:limpa())
+modoleitura = Button(application, text="Modo leitura", command=lambda:leitura())
+buttonenable = Button(application, text="Modo de edição", command=lambda:enable())
+modoleitura.pack()
+buttonenable.pack()
 texto.pack()
 label.pack()
 label2.pack()
