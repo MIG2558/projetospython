@@ -61,6 +61,6 @@ l1.pack()
 l2.pack()
 b.pack()
 novaaba.pack()
-texto.bind("<KeyRelease>", lambda event: contar())
+texto.bind("<KeyPress>", lambda event: contar())
 
 application.mainloop()
