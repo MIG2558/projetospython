@@ -117,6 +117,6 @@ button.pack()
 babrir.pack()
 bsalvar.pack()
 application.bind("<F5>", lambda event: executar() or "<Control+F5>", lambda event: executar())
-texto.bind("<KeyRelease>", lambda event: contar())
+texto.bind("<KeyPress>", lambda event: contar())
 
 application.mainloop()
