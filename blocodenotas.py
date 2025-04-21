@@ -46,7 +46,7 @@ label2.pack()
 abrir.pack()
 salvar.pack()
 limpar.pack()
-texto.bind("<KeyRelease>", lambda event: atualizatudo())
+texto.bind("<KeyPress>", lambda event: atualizatudo())
 texto.bind("<Control-s>", lambda event: fsalvar())
 texto.bind("<Control-o>", lambda event: abrirarqv())
 
